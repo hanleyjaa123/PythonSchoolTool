@@ -22,16 +22,38 @@ def required_grade(total, wgrade):
  
  
   
+print("School Tools")
+print("1. Grade Cal - takes users number of problems they got correct and how many problems there were total and will calcuate their score. ")
+print("2. Required Grade - takes the total problems in a test and your desired grade for the test, then calcuates how many questions you need to get correct to receive the grade you want. ")
+
+userinput = input("What would you like to do?")
+
+
+
+if userinput == "1":
+        grade = input("How many problems did you get correct?")
+
+        total = input("How many problems total?")
+        print(gradecal(grade, total))
+elif userinput == "2":
+    wgrade = input("what is your desired grade?")
+    total = input("How many problems total?")
+    print(required_grade(total, wgrade))
+else:
+    print("that is not an option")
 
 
 
 
-wgrade = input("what is your desired grade?")
 
 
-total = input("How many problems total?")
 
-print(required_grade(total, wgrade))
+#wgrade = input("what is your desired grade?")
+
+
+#total = input("How many problems total?")
+
+#print(required_grade(total, wgrade))
 
 
 
