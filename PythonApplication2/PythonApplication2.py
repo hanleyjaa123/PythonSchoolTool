@@ -21,7 +21,7 @@ def required_grade(total, wgrade):
      return aws
  
  
-  
+# Main menu, user selection of tools  
 print("School Tools")
 print("1. Grade Cal - takes users number of problems they got correct and how many problems there were total and will calcuate their score. ")
 print("2. Required Grade - takes the total problems in a test and your desired grade for the test, then calcuates how many questions you need to get correct to receive the grade you want. ")
