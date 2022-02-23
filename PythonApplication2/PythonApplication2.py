@@ -13,7 +13,6 @@ def gradecal(grade, total):
 
 
 
-
  # takes the total problems in a test and your desired grade for the test, then calcuates how many questions you need to get correct to receive the grade you want. 
 def required_grade(total, wgrade):
      sum = int(wgrade) * int(total)
@@ -27,6 +26,8 @@ print("1. Grade Cal - takes users number of problems they got correct and how ma
 print("2. Required Grade - takes the total problems in a test and your desired grade for the test, then calcuates how many questions you need to get correct to receive the grade you want. ")
 
 userinput = input("What would you like to do?")
+
+
 
 
 
@@ -56,27 +57,28 @@ else:
 #print(required_grade(total, wgrade))
 
 
+# Quick sort algorithm takes piviot point in a list, and sorts by creating a new list and one by 
+# one checks to see if the following number is larger or smaller than pivot point
+def quick_sort(sequence):
+    length = len(sequence)
+    if length <= 1:
+        return sequence
+    else:
+        pivot = sequence.pop()
 
-#def quick_sort(sequence):
-   # length = len(sequence)
-#    if length <= 1:
- #       return sequence
-  #  else:
- #       pivot = sequence.pop()
+    items_greater = []
+    items_lower = []
+     
+    for item in sequence:
+        if item > pivot:
+            items_greater.append(item)
 
-#    items_greater = []
- #   items_lower = []
+        else:
+            items_lower.append(item)
 
- #   for item in sequence:
-   #     if item > pivot:
-    #        items_greater.append(item)
+    return quick_sort(items_lower) + [pivot] + quick_sort(items_greater)
 
-   #     else:
-    #        items_lower.append(item)
-
-    #return quick_sort(items_lower) + [pivot] + quick_sort(items_greater)
-
-#print(quick_sort(data.data_finder()))
+print(quick_sort(data.data_finder()))
 #print(type(data.data_finder()))
 #def random_gen(int):
     
