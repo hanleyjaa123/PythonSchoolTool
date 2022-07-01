@@ -1,6 +1,7 @@
 import math
 import data
 import random
+import time
 
 
 
@@ -37,11 +38,14 @@ if userinput == "1":
         total = input("How many problems total?")
         print(gradecal(grade, total))
 elif userinput == "2":
-    wgrade = input("what is your desired grade?")
-    total = input("How many problems total?")
+    wgrade = input("what is your desired grade: ")
+    total = input("How many problems total: ")
     print(required_grade(total, wgrade))
+    time.sleep(5)
 else:
     print("that is not an option")
+
+
 
 
 
@@ -78,7 +82,7 @@ def quick_sort(sequence):
 
     return quick_sort(items_lower) + [pivot] + quick_sort(items_greater)
 
-print(quick_sort(data.data_finder()))
+#print(quick_sort(data.data_finder()))
 #print(type(data.data_finder()))
 #def random_gen(int):
     
