@@ -1,8 +1,17 @@
 import math
 import data
-#import random
+
+userinput = "1"
 
 
+def start(userinput):
+     print("School Tools")
+     print("1. Grade Cal - takes users number of problems they got correct and how many problems there were total and will calcuate their score. ")
+     print("2. Required Grade - takes the total problems in a test and your desired grade for the test, then calcuates how many questions you need to get correct to receive the grade you want.")
+     userinput = input("what would you like to do?")
+     return userinput
+
+userinput = start(userinput)
 
 
 #takes users number of problems correct and how many problems there  was and will calcuate their score. 
@@ -19,18 +28,11 @@ def required_grade(total, wgrade):
      aws = sum / 100
      return aws
  
- 
-# Main menu, user selection of tools  
-print("School Tools")
-print("1. Grade Cal - takes users number of problems they got correct and how many problems there were total and will calcuate their score. ")
-print("2. Required Grade - takes the total problems in a test and your desired grade for the test, then calcuates how many questions you need to get correct to receive the grade you want. ")
-
-userinput = input("What would you like to do?")
 
 
 
 
-
+#def userChoice(userinput):
 if userinput == "1":
         grade = input("How many problems did you get correct?")
 
