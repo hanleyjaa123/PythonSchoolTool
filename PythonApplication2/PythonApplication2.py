@@ -3,7 +3,7 @@ import data
 
 userinput = "1"
 
-
+# Function for the main menu, initlized here, then called on directly after being initlized
 def start(userinput):
      print("School Tools")
      print("1. Grade Cal - takes users number of problems they got correct and how many problems there were total and will calcuate their score. ")
